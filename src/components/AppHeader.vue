@@ -5,7 +5,7 @@
 </script>
 <template lang="">
   <div>
-    
+    ciao
   </div>
 </template>
 <style lang="">
