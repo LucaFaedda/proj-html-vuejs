@@ -1,26 +1,26 @@
 let arrayIcone = [
     {
-        label: '<i class="fa-brands fa-facebook"></i>',
+        label: 'fa-brands fa-facebook',
         stato: false
     },
     {
-        label: '<i class="fa-brands fa-twitter"></i>',
+        label: 'fa-brands fa-twitter',
         stato: false
     },
     {
-        label: '<i class="fa-brands fa-instagram"></i>',
+        label: "fa-brands fa-instagram",
         stato: false
     },
     {
-        label: '<i class="fa-brands fa-linkedin"></i>',
+        label: "fa-brands fa-linkedin",
         stato: false
     },
     {
-        label: '<i class="fa-brands fa-google-plus-g"></i>',
+        label: "fa-brands fa-google-plus-g",
         stato: false
     },
     {
-        label: '<i class="fa-brands fa-youtube"></i>',
+        label: "fa-brands fa-youtube",
         stato: false
     },
 ]

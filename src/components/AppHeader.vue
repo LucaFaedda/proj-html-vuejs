@@ -1,14 +1,18 @@
 <script>
 
 import AppNavbar from './AppNavbar.vue';
+import AppNavIcone from './AppNavIcone.vue';
 import arrayNavbar from '../assets/data/arrayNavbar'
+import arrayIcone from '../assets/data/arrayIcone'
   export default {
     components:{
-        AppNavbar
+        AppNavbar,
+        AppNavIcone
     },
     data(){
         return{
-            listaNav: arrayNavbar
+            listaNav: arrayNavbar,
+            listaIcone: arrayIcone
         }
 
     }
@@ -22,13 +26,15 @@ import arrayNavbar from '../assets/data/arrayNavbar'
             <div class="col-2">
                 English
             </div>
-            <div class="col-8 d-flex">
+            <div class="col-8 d-flex flex-row-reverse">
                 <ul class="list-unstyled d-flex">
                     <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
                 </ul>
             </div>
-            <div class="col-2">
-
+            <div class="col-2 d-flex">
+                <ul  class="list-unstyled d-flex">
+                    <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
+                </ul>
             </div>
         </div>
 

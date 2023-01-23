@@ -8,7 +8,7 @@ export default {
 }
 </script>
 <template lang="">
-    <li>
+    <li class="mx-2">
         <a class="dropdown">
             <a  href="#"  data-bs-toggle="dropdown" aria-expanded="false">
                 {{ navbar.label}}
