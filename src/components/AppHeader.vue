@@ -4,6 +4,7 @@ import AppNavbar from './AppNavbar.vue';
 import AppNavIcone from './AppNavIcone.vue';
 import arrayNavbar from '../assets/data/arrayNavbar'
 import arrayIcone from '../assets/data/arrayIcone'
+import arrayCategory from '../assets/data/arrayCategory';
   export default {
     components:{
         AppNavbar,
@@ -12,7 +13,8 @@ import arrayIcone from '../assets/data/arrayIcone'
     data(){
         return{
             listaNav: arrayNavbar,
-            listaIcone: arrayIcone
+            listaIcone: arrayIcone,
+            listaCategorie: arrayCategory
         }
 
     }
@@ -21,7 +23,7 @@ import arrayIcone from '../assets/data/arrayIcone'
 </script>
 <template lang="">
   <header>
-    <div class="container-fluid padding-header">
+    <div class="container-fluid padding-container">
         <div class="row navbar ">
             <div class="col-2 ">
                 English
@@ -34,12 +36,16 @@ import arrayIcone from '../assets/data/arrayIcone'
                     <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
                 </ul>
             </div>
-
         </div>
-        
     </div>
-    <div class="container-fluid border-top">
+    <div class="container-fluid border-top"></div>
+    <div class="container-fluid padding-container">
+        <div class="row">
+            <div class="col-12">
+                <img src="../assets/img/masterstudy-logo.svg">
 
+            </div>
+        </div>
     </div>
   </header>
 </template>
@@ -53,8 +59,8 @@ header{
     width: 100%;
 
     
-    .padding-header{
-        padding: 1rem 7rem;
+    .padding-container{
+        padding: 1rem 7rem 0rem;
         .navbar{
         color: $colorGrey;
         font-size: 14px;

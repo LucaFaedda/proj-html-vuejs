@@ -4,6 +4,14 @@ export default {
     props:{
         navbar:Object
     },
+    methods: {
+        onOver(){
+            this.$refs.dropdown.visibile = true
+        },
+        onLeave(){
+            this.$refs.dropdown.visibile = false
+        }
+    },
 
 }
 </script>
