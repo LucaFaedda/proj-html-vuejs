@@ -192,7 +192,7 @@ let arrayNavbar = [
                 children_2: null
             },
             {
-                label_2: 'Cooking Courses',
+                label_2: 'Cooking',
                 link_2: '#',
                 children_2: null
             },
