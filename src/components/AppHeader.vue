@@ -17,7 +17,22 @@ import arrayNavbar from '../assets/data/arrayNavbar'
 </script>
 <template lang="">
   <header>
-    <AppNavbar></AppNavbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                English
+            </div>
+            <div class="col-8 d-flex">
+                <ul class="list-unstyled d-flex">
+                    <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
+                </ul>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+
+    </div>
   </header>
 </template>
 <style lang="scss" scoped>

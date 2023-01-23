@@ -1,20 +1,27 @@
 <script>
-  export default {
-      
-  }
+
+export default {
+    props:{
+        navbar:Object
+    }
+}
 </script>
 <template lang="">
-    <div class="container">
-        <div class="row">
-            <div class="col-2 text-danger">
-                English
-            </div>
-            <div class="col-8">
+    <li>
+        <a class="dropdown">
+            <a  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ navbar.label}}
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
 
-            </div>
-        </div>
+        </a>
 
-    </div>
+
+    </li>
 </template>
 <style lang="scss" scoped>
 
