@@ -8,7 +8,7 @@ export default {
 }
 </script>
 <template lang="">
-    <li class="mx-2">
+    <li class="mx-3">
         <a class="dropdown">
             <a  href="#"  data-bs-toggle="dropdown" aria-expanded="false">
                 {{ navbar.label}}
@@ -36,6 +36,10 @@ export default {
 
 @use '../assets/style/partials/mixin' as *;
 @use '../assets/style/partials/variables' as *;
+
+a{
+    color:$colorGrey
+}
 
 
 

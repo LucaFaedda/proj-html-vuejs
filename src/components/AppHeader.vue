@@ -21,22 +21,24 @@ import arrayIcone from '../assets/data/arrayIcone'
 </script>
 <template lang="">
   <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
+    <div class="container-fluid padding-header">
+        <div class="row navbar ">
+            <div class="col-2 ">
                 English
             </div>
-            <div class="col-8 d-flex flex-row-reverse">
+            <div class="col-10 d-flex justify-content-end">
                 <ul class="list-unstyled d-flex">
                     <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
                 </ul>
-            </div>
-            <div class="col-2 d-flex">
-                <ul  class="list-unstyled d-flex">
+                <ul  class="list-unstyled d-flex lista-icone">
                     <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
                 </ul>
             </div>
+
         </div>
+        
+    </div>
+    <div class="container-fluid border-top">
 
     </div>
   </header>
@@ -49,6 +51,23 @@ import arrayIcone from '../assets/data/arrayIcone'
 header{
     height: 250px;
     width: 100%;
+
+    
+    .padding-header{
+        padding: 1rem 7rem;
+        .navbar{
+        color: $colorGrey;
+        font-size: 14px;
+
+        .lista-icone{
+            margin-left: 2rem;
+        }
+
+    }
+
+    }
+
+
 }
   
 </style>
