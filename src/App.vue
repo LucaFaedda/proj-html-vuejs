@@ -14,6 +14,11 @@ import AppFooter from './components/AppFooter.vue';
     <AppFooter></AppFooter>
   </div>
 </template>
-<style lang="">
+<style lang="scss">
+
+@use './assets/style/general.scss' as *;
+@use './assets/style/partials/mixin.scss' as *;
+@use './assets/style/partials/variables.scss' as *;
+
   
 </style>
