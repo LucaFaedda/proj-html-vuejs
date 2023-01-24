@@ -35,41 +35,54 @@
   }
 </script>
 <template lang="">
-  <footer class="container-fluid">
-    <div class="container-small">
-      <div class="row">
-        <div class="col-3 text-white">
-          <h4>ABOUT</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deserunt similique exercitationem numquam aut consequuntur repellendus culpa magnam et iusto.</p>
+  <footer >
+    <div class="container-fluid">
 
+        <div class="container-small">
+            <div class="row">
+                  <div class="col-3 text-white">
+                      <h4>ABOUT</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deserunt similique exercitationem numquam aut consequuntur repellendus culpa magnam et iusto.</p>
+                  </div>
+                  <div class="col-3 text-white">
+                      <h4>CONTACT</h4>
+                      <ul class="list-unstyled lista-contatti">
+                        <li>USA, California 20, First Avenue, Callifornia</li>
+                        <li>Tel.: +1 212 458 300 32</li>
+                        <li>Fax: +1 212 375 24 14</li>
+                        <li>info@masterstudy.com</li>
+                      </ul>
+                  </div>
+                  <div class="col-3  text-white">
+                      <h4>SOCIAL NETWORK</h4>
+                      <div >
+                        <ul class="list-unstyled d-flex  flex-wrap prova">
+                          <li v-for="(item, index) in arrayIconeFooter" :key="index"  class=" d-flex align-item-center justify-content-center" :style="item.bk">
+                              <i :class="item.label" class="align-self-center"></i> 
+                          </li>
+                        </ul>
+            
+                      </div>
+                  </div>
+                  <div class="col-3">
+                      <img src="../assets/img/Top-udemy-courses-90-percent-off.jpg">
+                  </div>
+            </div>    
         </div>
-        <div class="col-3 text-white">
-          <h4>CONTACT</h4>
-          <ul class="list-unstyled lista-contatti">
-            <li>USA, California 20, First Avenue, Callifornia</li>
-            <li>Tel.: +1 212 458 300 32</li>
-            <li>Fax: +1 212 375 24 14</li>
-            <li>info@masterstudy.com</li>
-          </ul>
-        </div>
-        <div class="col-3 text-white">
-          <h4>SOCIAL NETWORK</h4>
-          <div >
-            <ul class="list-unstyled d-flex flex-wrap prova">
-              <li v-for="(item, index) in arrayIconeFooter" :key="index"  class=" d-flex align-item-center justify-content-center" :style="item.bk">
-                  <i :class="item.label" class="align-self-center"></i> 
-              </li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="col-3">
-          <img src="../assets/img/Top-udemy-courses-90-percent-off.jpg">
-        </div>
-
-      </div>
-                
     </div>
+    
+    <div class="container-fluid border-top color-grey"></div>
+    <div class="container-fluid">
+        <div class="container-small-2">
+            <div class="row footer-inferiore">
+                  <div class="col-12 d-flex text-white">
+                    <img src="../assets/img/footer-logo2x-50x56.png" alt="logo-footer">
+                    <span class="ms-3">Copryright <i class="fa-regular fa-copyright"></i> 2022. <a href="#">MasterStudy</a>. Theme by <a href="#">StylemixThemes</a></span>
+                  </div>
+            </div>    
+        </div>
+    </div>
+
   </footer>
 </template>
 <style lang="scss" scoped>
@@ -79,6 +92,8 @@
 
 footer{
   background-color: $colorBlue;
+
+  /*sezione superiore */
     .container-small{
       max-width: 1176px;
       margin: 0 auto;
@@ -98,7 +113,7 @@ footer{
             font-size: 14px;
           }
           li:last-child{
-            color: $colorGrey;
+            color: $colorGrey ;
             cursor: pointer;
           }
         }
@@ -124,6 +139,28 @@ footer{
         }       
 
     }
+  
+  .color-grey{
+    border :$colorGrey 1px solid;
+  }
+
+  .container-small-2{
+      max-width: 1176px;
+      margin: 0 auto;
+      padding: 30px 0px;
+  .footer-inferiore{
+    img{
+      width: 25px;
+    }
+    a{
+      color: #fff;
+      text-decoration: underline;
+      &:hover{
+        color: $colorRed
+      }
+    }
+  }
+}
 }
   
 </style>
