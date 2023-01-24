@@ -16,6 +16,10 @@ export default {
 
 i{
     margin: 0px 5px;
+    &:hover{
+        color: $colorLightblu;
+        cursor: pointer;
+    }
 }
 
 </style>

@@ -3,7 +3,7 @@ let arrayCourses = [
         label: 'Business',
         icons: 'fa-solid fa-chart-line',
         stato: false,
-        chidlren: [
+        children: [
             {
                 label_2: 'Data & Analytics',
                 icons_2: 'fa-solid fa-database',
@@ -30,7 +30,7 @@ let arrayCourses = [
         label: 'Design',
         icons: 'fa-solid fa-palette',
         stato: false,
-        chidlren: [
+        children: [
             {
                 label_2: '3D & animation',
                 icons_2: 'fa-solid fa-vr-cardboard',
@@ -57,7 +57,7 @@ let arrayCourses = [
         label: 'Development',
         icons: 'fa-solid fa-gear',
         stato: false,
-        chidlren: [
+        children: [
             {
                 label_2: 'Data Science',
                 icons_2: 'fa-solid fa-arrow-right',
@@ -88,7 +88,7 @@ let arrayCourses = [
         label: 'Lifestyle',
         icons: 'fa-regular fa-face-smile',
         stato: false,
-        chidlren: [
+        children: [
             {
                 label_2: 'Arts & Craftys',
                 icons_2: 'fa-solid fa-paintbrush',
@@ -103,7 +103,7 @@ let arrayCourses = [
         label: 'Office Productivity',
         icons: 'fa-solid fa-wallet',
         stato: false,
-        chidlren: [
+        children: [
             {
                 label_2: 'Google',
                 icons_2: 'fa-solid fa-users',
