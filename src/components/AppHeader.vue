@@ -1,9 +1,9 @@
 <script>
 
-import AppNavbar from './AppNavbar.vue';
-import AppNavIcone from './AppNavIcone.vue';
-import AppCategoryBar from './AppCategoryBar.vue';
-import AppCorsi from './AppCorsi.vue';
+import AppNavbar from './ComponentsAppHeader/AppNavbar.vue';
+import AppNavIcone from './ComponentsAppHeader/AppNavIcone.vue';
+import AppCategoryBar from './ComponentsAppHeader/AppCategoryBar.vue';
+import AppCorsi from './ComponentsAppHeader/AppCorsi.vue';
 import arrayNavbar from '../assets/data/arrayNavbar'
 import arrayIcone from '../assets/data/arrayIcone'
 import arrayCategory from '../assets/data/arrayCategory';
