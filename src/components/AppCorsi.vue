@@ -2,11 +2,24 @@
 export default {
     props:{
         corsi:Object
-    }
+    },
+    data(){
+        return{
+            isOpen: false
+        }
+    },
+    methods: {
+        onOver(){
+            this.isOpen = true
+        },
+        onLeave(){
+            this.isOpen = false
+        }
+    },
 }
 </script>
 <template lang="">
-    <div class="corsi">
+    <div class="corsi" v-on:mouseover="onOver" v-on:mouseleave="onLeave">
         <i :class="corsi.icons" class="me-3"></i>
         <a href="#">{{corsi.label}}</a>
     </div>
@@ -17,6 +30,8 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 .corsi{
+
+    text-align: center;
     i{
         font-size: 20px;
     }
@@ -24,6 +39,11 @@ export default {
     a{
         color: #fff;
         font-size: 16px;
+    }
+
+    &:hover{
+        background-color: $colorLightblu;
+        cursor: pointer;
     }
 
 }
