@@ -52,7 +52,7 @@ import arrayCategory from '../assets/data/arrayCategory';
     <div class="container-fluid border-top"></div>
     <div class="container-fluid padding-container">
         <div class="row">
-            <div class="col-3 d-flex align-items-center ">
+            <div class="col-12 d-flex align-items-center ">
                 <img src="../assets/img/masterstudy-logo.svg">
                 <div class="d-flex align-items-center ms-4">
                     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -71,13 +71,29 @@ import arrayCategory from '../assets/data/arrayCategory';
                         </ul>
                     </span>
                 </div>
-            </div>
-            <div class="col-4  d-flex align-items-center ">
-                    <div class="input-group d-flex align-items-center">
-                        <input type="text" class="form-control" placeholder="Search Course" aria-label="Recipient's username" >
-                        <button class="btn btn-personalizzato"  ><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
+                <div class="input-container d-flex align-items-center mx-4">
+                    <input type="text"  placeholder="Search Course" aria-label="Recipient's username"  >
+                    <button class="btn btn-personalizzato"  ><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
+                <div class="container-icone ms-4">
+                    <i class="fa-solid fa-bullhorn "></i>
+                    <span>Become an Instructor</span>
+                </div>
+                <div class="container-icone ms-4">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>For Enterprise</span>
+                </div>
+                <div class="sign-up ms-5">
+                    <i class="fa-regular fa-user "></i>
+                    <span>Log in</span>
+                    <button class="btn btn-danger mx-3">SIGN UP</button>
+                    <i class="fa-regular fa-heart "></i>
+                </div>
+            </div>
+            <!-- <div class="col-4  d-flex align-items-center ">
+            </div>
+            <div class="col-3 d-flex align-items-center">
+            </div> -->
         </div>
     </div>
   </header>
@@ -117,6 +133,18 @@ header{
 .isOpen {
     display: block;
 }
+
+.input-container{
+    input{
+        width: 500px;
+        border: none;
+        padding: 9px 20px;
+        background-color: #f0f2f5;
+
+    }
+
+}
+
 
 .btn-personalizzato{
     border-radius: 0;
