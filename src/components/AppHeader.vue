@@ -21,7 +21,8 @@ import arrayCourses from '../assets/data/arrayCourses';
             listaIcone: arrayIcone,
             listaCategorie: arrayCategory,
             listaCorsi: arrayCourses,
-            isOpen: false
+            isOpen: false,
+            selected: ''
         }
 
     },
@@ -38,10 +39,15 @@ import arrayCourses from '../assets/data/arrayCourses';
 </script>
 <template lang="">
     <header>
+        <!-- inizio navbar -->
         <div class="container-fluid padding-container">
             <div class="row navbar ">
                 <div class="col-2 ">
-                    English
+                    <select v-model="selected">
+                        <option>English</option>
+                        <option>Deutesch</option>
+                        <option>Italian</option>
+                    </select>
                 </div>
                 <div class="col-10 d-flex justify-content-end">
                     <div class=" d-flex" >
@@ -53,6 +59,7 @@ import arrayCourses from '../assets/data/arrayCourses';
                 </div>
             </div>
         </div>
+        <!-- inizio searchbar -->
         <div class="container-fluid border-top"></div>
         <div class="container-fluid padding-container">
             <div class="row mt-3">
@@ -92,12 +99,9 @@ import arrayCourses from '../assets/data/arrayCourses';
                         <i class="fa-regular fa-heart "></i>
                     </div>
                 </div>
-                <!-- <div class="col-4  d-flex align-items-center ">
-                </div>
-                <div class="col-3 d-flex align-items-center">
-                </div> -->
             </div>
         </div>
+        <!-- sezione corsi -->
         <div class="container-fluid bk-blue mt-4">
             <div class="d-flex justify-content-center  container-small">
                 <AppCorsi  v-for="(item , index) in listaCorsi" :key="index" :corsi="item" class="corsiApp"></AppCorsi>
@@ -118,6 +122,11 @@ header{
         .navbar{
         color: $colorGrey;
         font-size: 14px;
+
+            select{
+                color:$colorGrey;
+                border: none;
+            }
 
             .lista-icone{
                 margin-left: 2rem;
