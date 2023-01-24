@@ -111,7 +111,7 @@ import arrayCourses from '../assets/data/arrayCourses';
 @use '../assets/style/partials/variables' as *;
 
 header{
-
+    font-family: 'Roboto', sans-serif; 
     width: 100%;
     .padding-container{
         padding: 1rem 7rem 0rem;

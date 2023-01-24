@@ -48,7 +48,8 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 a{
-    color:$colorGrey
+    color:$colorGrey;
+    cursor: pointer;
 }
 
 .contenitore-dropdown{
