@@ -33,70 +33,71 @@ import arrayCategory from '../assets/data/arrayCategory';
   }
 </script>
 <template lang="">
-  <header>
-    <div class="container-fluid padding-container">
-        <div class="row navbar ">
-            <div class="col-2 ">
-                English
-            </div>
-            <div class="col-10 d-flex justify-content-end">
-                <ul class="list-unstyled d-flex">
-                    <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
-                </ul>
-                <ul  class="list-unstyled d-flex lista-icone">
-                    <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
-                </ul>
+    <header>
+        <div class="container-fluid padding-container">
+            <div class="row navbar ">
+                <div class="col-2 ">
+                    English
+                </div>
+                <div class="col-10 d-flex justify-content-end">
+                    <div class=" d-flex" >
+                        <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
+                    </div>
+                    <ul  class="list-unstyled d-flex lista-icone">
+                        <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid border-top"></div>
-    <div class="container-fluid padding-container">
-        <div class="row">
-            <div class="col-12 d-flex align-items-center ">
-                <img src="../assets/img/masterstudy-logo.svg">
-                <div class="d-flex align-items-center ms-4">
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                    </button>
-                    <span
-                        v-on:mouseover="onOver"
-                        v-on:mouseleave="onLeave" class="contenitore-dropdown ms-1">
-                        Category
-                        
-                        <ul class=" menu-discesa"
-                           :class="{ isOpen }">
-                            <AppCategoryBar v-for="(item, index) in listaCategorie" :key="index" :categoria="item"/>
-                        </ul>
-                    </span>
+        <div class="container-fluid border-top"></div>
+        <div class="container-fluid padding-container">
+            <div class="row mt-3">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <img src="../assets/img/masterstudy-logo.svg">
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                        </button>
+                        <span
+                            v-on:mouseover="onOver"
+                            v-on:mouseleave="onLeave" class="contenitore-dropdown ms-1">
+                            Category
+                            
+                            <ul class=" menu-discesa"
+                            :class="{ isOpen }">
+                                <AppCategoryBar v-for="(item, index) in listaCategorie" :key="index" :categoria="item"/>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="input-container d-flex align-items-center ">
+                        <input type="text"  placeholder="Search Course" aria-label="Recipient's username"  >
+                        <button class="btn btn-personalizzato"  ><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="container-icone">
+                        <i class="fa-solid fa-bullhorn me-2"></i>
+                        <span>Become an Instructor</span>
+                        <i class="fa-solid fa-briefcase me-2 ms-4"></i>
+                        <span>For Enterprise</span>
+                    </div>
+                    <div class="sign-up ">
+                        <i class="fa-regular fa-user me-2"></i>
+                        <span>Log in</span>
+                        <button class="btn btn-sign-up mx-3">SIGN UP</button>
+                        <i class="fa-regular fa-heart "></i>
+                    </div>
                 </div>
-                <div class="input-container d-flex align-items-center mx-4">
-                    <input type="text"  placeholder="Search Course" aria-label="Recipient's username"  >
-                    <button class="btn btn-personalizzato"  ><i class="fa-solid fa-magnifying-glass"></i></button>
+                <!-- <div class="col-4  d-flex align-items-center ">
                 </div>
-                <div class="container-icone ms-4">
-                    <i class="fa-solid fa-bullhorn "></i>
-                    <span>Become an Instructor</span>
-                </div>
-                <div class="container-icone ms-4">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>For Enterprise</span>
-                </div>
-                <div class="sign-up ms-5">
-                    <i class="fa-regular fa-user "></i>
-                    <span>Log in</span>
-                    <button class="btn btn-danger mx-3">SIGN UP</button>
-                    <i class="fa-regular fa-heart "></i>
-                </div>
+                <div class="col-3 d-flex align-items-center">
+                </div> -->
             </div>
-            <!-- <div class="col-4  d-flex align-items-center ">
-            </div>
-            <div class="col-3 d-flex align-items-center">
-            </div> -->
         </div>
-    </div>
-  </header>
+        <div class="container-fluid bk-blue">
+            <div class="container"></div>
+        </div>
+    </header>
 </template>
 <style lang="scss" scoped>
 
@@ -118,6 +119,8 @@ header{
         }
     }
 }
+
+/* sezione dropdown category*/
 .contenitore-dropdown{
     position: relative;
 }
@@ -145,7 +148,7 @@ header{
 
 }
 
-
+/* sezione search bar*/
 .btn-personalizzato{
     border-radius: 0;
     background-color: $colorLightblu;
@@ -160,7 +163,30 @@ header{
 
 }
 
+.container-icone{
+    i{
+        color:$colorLightblu;
+    }
+    span:hover{
+        color:$colorLightblu;
+        cursor: pointer;
+    }
+}
 
+//sezione SIGN UP*/
+.sign-up{
+    color: $colorLightblu;
+
+    .btn-sign-up{
+        @include btn-red;
+            &:hover{
+                background-color: $colorLightblu;
+            }
+    }
+    .fa-heart{
+        font-size: 25px;
+    }
+}
 
   
 </style>
