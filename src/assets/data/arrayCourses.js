@@ -101,7 +101,7 @@ let arrayCourses = [
     },
     {
         label: 'Office Productivity',
-        icons: 'fa-regular fa-wallet',
+        icons: 'fa-solid fa-wallet',
         stato: false,
         chidlren: [
             {

@@ -3,20 +3,24 @@
 import AppNavbar from './AppNavbar.vue';
 import AppNavIcone from './AppNavIcone.vue';
 import AppCategoryBar from './AppCategoryBar.vue';
+import AppCorsi from './AppCorsi.vue';
 import arrayNavbar from '../assets/data/arrayNavbar'
 import arrayIcone from '../assets/data/arrayIcone'
 import arrayCategory from '../assets/data/arrayCategory';
+import arrayCourses from '../assets/data/arrayCourses';
   export default {
     components:{
         AppNavbar,
         AppNavIcone,
-        AppCategoryBar
+        AppCategoryBar,
+        AppCorsi
     },
     data(){
         return{
             listaNav: arrayNavbar,
             listaIcone: arrayIcone,
             listaCategorie: arrayCategory,
+            listaCorsi: arrayCourses,
             isOpen: false
         }
 
@@ -94,8 +98,10 @@ import arrayCategory from '../assets/data/arrayCategory';
                 </div> -->
             </div>
         </div>
-        <div class="container-fluid bk-blue">
-            <div class="container"></div>
+        <div class="container-fluid bk-blue mt-4">
+            <div class="d-flex justify-content-center  container-small">
+                <AppCorsi  v-for="(item , index) in listaCorsi" :key="index" :corsi="item" class="corsiApp"></AppCorsi>
+            </div>
         </div>
     </header>
 </template>
@@ -105,7 +111,7 @@ import arrayCategory from '../assets/data/arrayCategory';
 @use '../assets/style/partials/variables' as *;
 
 header{
-    height: 250px;
+
     width: 100%;
     .padding-container{
         padding: 1rem 7rem 0rem;
@@ -131,6 +137,7 @@ header{
     display: none;
     padding: 0;
     list-style-type: none;
+    background-color: #fff;
 }
 
 .isOpen {
@@ -188,5 +195,18 @@ header{
     }
 }
 
-  
+.bk-blue{
+    background-color: $colorBlue;
+}
+
+.container-small{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.corsiApp{
+    width: calc(100% / 5);
+    padding: 30px 0px;
+    color: #fff;
+
+}
 </style>
