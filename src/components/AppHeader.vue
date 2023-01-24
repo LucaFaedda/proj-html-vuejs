@@ -43,9 +43,9 @@ import arrayCategory from '../assets/data/arrayCategory';
                     <div class=" d-flex" >
                         <AppNavbar v-for="(item, index) in listaNav" :key="index" :navbar="item"></AppNavbar>
                     </div>
-                    <ul  class="list-unstyled d-flex lista-icone">
+                    <div  class=" mx-2 lista-icone">
                         <AppNavIcone v-for="(item, index) in listaIcone" :key="index" :icone="item"></AppNavIcone>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,10 +65,10 @@ import arrayCategory from '../assets/data/arrayCategory';
                             v-on:mouseleave="onLeave" class="contenitore-dropdown ms-1">
                             Category
                             
-                            <ul class=" menu-discesa"
+                            <span class=" menu-discesa"
                             :class="{ isOpen }">
                                 <AppCategoryBar v-for="(item, index) in listaCategorie" :key="index" :categoria="item"/>
-                            </ul>
+                            </span>
                         </span>
                     </div>
                     <div class="input-container d-flex align-items-center ">

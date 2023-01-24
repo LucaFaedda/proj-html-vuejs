@@ -6,18 +6,16 @@ export default {
 }
 </script>
 <template lang="">
-    <div>
-        <li class="mx-1">
-            <i :class="icone.label">
-                
-            </i>
-        </li>
-    </div>
+        <i :class="icone.label"></i>
 </template>
 
 <style lang="scss" scoped>
     
 @use '../assets/style/partials/mixin' as *;
 @use '../assets/style/partials/variables' as *;
+
+i{
+    margin: 0px 5px;
+}
 
 </style>
