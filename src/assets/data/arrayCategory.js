@@ -309,3 +309,5 @@ let arrayCategory = [
 ]
 
 export default arrayCategory
+
+console.log(arrayCategory)
