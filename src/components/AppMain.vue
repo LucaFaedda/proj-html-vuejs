@@ -18,8 +18,9 @@ export default {
                         </div>
                     </div>
                 </div>
-            <!-- <img src="../assets/img/slide-1.jpg"> -->
+            
         </div>
+        <!-- sezione card popolari -->
         <div class="container-fluid padding-container my-5">
             <div class="row">
                 <div class="col-12 mb-4">
@@ -157,6 +158,20 @@ export default {
             </div>
 
         </div>
+        <div class="container-fluid bk-image-desk">
+            <div class="container ">
+                    <div class="row">
+                        <div class="col-4">
+                            <h2>Limitless Learnign, More possibility</h2>
+                            <p>Online courses open the opportunity for learning almost anyone, regardless of their scheduling</p>
+                            <button class="read-more">READ MORE</button>
+                        </div>
+                        <div class="col-8">
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </template>
 
@@ -176,7 +191,6 @@ export default {
                 h2{
                     font-size: 60px;       
                 }
-            
          }
     }
     .card{
@@ -196,5 +210,23 @@ export default {
             font-size: 14px;
            
         }
+    }
+
+    .bk-image-desk{
+        background-image: url('../assets/img/bg.png');
+        padding: 200px;
+
+        .container{
+            h2{
+                font-size: 40px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold
+            }
+        }
+    }
+
+    .read-more{
+        @include btn-red;
+        border: none
     }
 </style>
