@@ -162,6 +162,10 @@ header{
 
     }
 
+    input:focus{
+        outline: none;
+    }
+
 }
 
 /* sezione search bar*/

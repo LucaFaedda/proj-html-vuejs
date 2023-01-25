@@ -172,7 +172,8 @@ export default {
                     </div>
                 </div>
         </div>
-        <div class="container-fluid padding-container mt-5">
+        <!-- sezione card recenti -->
+        <div class="container-fluid padding-container mt-5 card-recenti">
             <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-center ">
                     <h2 class="font-40px">Recent course</h2>
@@ -456,6 +457,25 @@ export default {
                 </div>
             </div>
         </div>
+        <div class="container-fluid bk-red-red">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-7 text-light">
+                        <h4>Subscribe our newsletter</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+                    </div>
+                    <div class="col-5 ">
+                        <p class="text-light">YOUR E-MAIL ADDRESS</p>
+                        <div class="input-container d-flex align-items-center ">
+                        <input type="text"  placeholder="Enter your E-mail" aria-label="Recipient's username" class="subscribe" >
+                        <button class="btn btn-personalizzato"  >SUBSCRIBE</button>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </template>
 
@@ -518,38 +538,69 @@ export default {
 
     /* sezione corsi recenti */
 
-    .font-40px{
-        font-size: 40px;
-    }
+    .card-recenti{
 
-    .corsi-recenti{
-        li{
-            margin: 0 10px;
+        .font-40px{
+            font-size: 40px;
         }
-        ul:first-child{
-            color: #fff;
-        }
-
-    }
-
-    .bk-blue-btn{
-        padding: 10px 20px;
-        background-color: $colorLightblu;
-        border-radius:20px;
-    }
     
-    a{
-        color: $colorLightblu;
-        padding: 10px 20px;
+        .corsi-recenti{
+            li{
+                margin: 0 10px;
+            }
+            ul:first-child{
+                color: #fff;
+            }
+    
+        }
+    
+        .bk-blue-btn{
+            padding: 10px 20px;
+            background-color: $colorLightblu;
+            border-radius:20px;
+        }
+        
+        a{
+            color: $colorLightblu;
+            padding: 10px 20px;
+        }
+    
+        .lista-corsi:hover {
+            @include  hover-blue;
+            color:#fff
+        }
+    
+        .show-all{
+            @include btn-blue;
+            
+        }
     }
 
-    .lista-corsi:hover {
-        @include  hover-blue;
-        color:#fff
-    }
+    .bk-red-red{
+        background-color: $colorRed;
+        .container{
 
-    .show-all{
-        @include btn-blue;
+            .subscribe{
+                width: 80%;
+                padding: 10px 10px;
+                border: none
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            .btn-personalizzato{
+                background-color: $colorLightblu;
+                color: #fff;
+                padding: 10px 40px;
+                border-radius: 0%;
+                border:none
+            }
+        }
+
         
     }
+
+
 </style>
