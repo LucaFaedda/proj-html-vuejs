@@ -1,4 +1,4 @@
-let arrayCardPopolari = [
+let arrayCard = [
     {
         img: 'img/895786_7b4b_2-272x161.jpg',
         cardTitle: 'Development',
@@ -55,4 +55,4 @@ let arrayCardPopolari = [
     },
 ]
 
-export default arrayCardPopolari
+export default arrayCard

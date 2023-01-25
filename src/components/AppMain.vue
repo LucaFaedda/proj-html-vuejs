@@ -1,19 +1,17 @@
 <script>
-
-import arrayCardPopolari from '../assets/data/arrayCardPopolari'
+import AppCardPopolari from './AppComponentsMain/AppCardPopolari.vue'
+import arrayCard from '../assets/data/arrayCardPopolari';
 export default {
+    components:{
+        AppCardPopolari
+    },
     datat(){
         return{
-            bkImage1:true,
-            bkImage2:false,
-            listaCardPopolari: arrayCardPopolari
+            listaCard: arrayCard
         }
     },
-    mounted() {
-        setTimeout(()=> this.cambiaBk(), 3000);
-    },
     methods:{
-        cambiaBk(){
+        /*cambiaBk(){
             if(this.bkImage1 ){
                 this.bkImage1 == false
                 this.bkImage2 == true
@@ -22,7 +20,7 @@ export default {
                 this.bkImage1 == true
                 this.bkImage1 == false
             }
-        }
+        }*/
     }
 }
 </script>
@@ -52,6 +50,8 @@ export default {
             </div>
             <div class="row ">
                 <div class="col-12 d-flex justify-content-between card-popular ">
+                    <!-- <AppCardPopolari v-for="(item, index) in listaCard" :key="index" :cardpopolari="item"></AppCardPopolari>  
+                        Provato a fare ma per mancanza di tempo non ci sono riuscito -->
                     <div class="card" style="width: 17rem;">
                     <img src="../assets/img/895786_7b4b_2-272x161.jpg" class="card-img-top" alt="apple-products">
                     <div class="card-body">
@@ -683,7 +683,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="container-fluid " :class="{bkImage1, bkImage2}">
+        <div class="container-fluid " >
 
         </div>
     </div>
