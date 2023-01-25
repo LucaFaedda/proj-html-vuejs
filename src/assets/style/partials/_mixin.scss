@@ -1,5 +1,4 @@
 @mixin btn-red {
-
     padding: 15px 30px;
     border-radius: 31px;
     background-color: #ff4450;
@@ -7,9 +6,18 @@
     font-weight: bold;
 }
 
+@mixin btn-blue {
+    padding: 15px 30px;
+    border-radius: 31px;
+    background-color: #457993;
+    color: #fff;
+    font-weight: bold;
+    border: none
+}
+
+
+
 @mixin hover-blue {
-
-
     background-color: #457993;
     border-radius: 20px;
 }

@@ -191,6 +191,270 @@ export default {
                     </ul>
                 </div>
             </div>
+            <div class="row my-5">
+                <div class="col-12 d-flex justify-content-between card-popular ">
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/895786_7b4b_2-272x161.jpg" class="card-img-top" alt="apple-products">
+                    <div class="card-body">
+                        <p class="card-title">Development</p>
+                        <p class="card-text">The complete iOS & Swift 3 Developer Course</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <h6 >Free</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/1561458_7f3b-272x161.jpg" class="card-img-top" alt="HTML-CSS">
+                    <div class="card-body">
+                        <p class="card-title">Design</p>
+                        <p class="card-text">CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass)</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$199.99</p>
+                                <h6 >$100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/246154_d8b0_3-544x322.jpg" class="card-img-top" alt="Git">
+                    <div class="card-body">
+                        <p class="card-title">Development</p>
+                        <p class="card-text">Web Design for Beginners: Real World Coding in HTML & CSS</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$129.99</p>
+                                <h6 >$65</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/1208228_d61c_4-272x161.jpg" class="card-img-top" alt="android">
+                    <div class="card-body">
+                        <p class="card-title">Design</p>
+                        <p class="card-text">Digitally Painting Light and Color: Amateur to Master</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$139.99</p>
+                                <h6 >$70</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/186792_41e4_4-272x161.jpg" class="card-img-top" alt="apple-products-2">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">Become an Arabic Calligraphy Artist from Scratch</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <h6 >$199.99</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/1776542_30b1-272x161.jpg" class="card-img-top" alt="xamarin">
+                    <div class="card-body">
+                        <p class="card-title">Google</p>
+                        <p class="card-text">Google Searching Ninja!</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$189.99</p>
+                                <h6 >$95</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-between card-popular ">
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/949316_2a64_11-272x161.jpg" class="card-img-top" alt="apple-products">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">Foundations for Mastering Watercolor Painting</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$19.99</p>
+                                <h6 >$10</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/366802_6fcc-272x161.jpg" class="card-img-top" alt="HTML-CSS">
+                    <div class="card-body">
+                        <p class="card-title">Food & Beverage</p>
+                        <p class="card-text">Get Wine-Smart</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$49.99</p>
+                                <h6 >$25</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/381588_2e6d_4-272x161.jpg" class="card-img-top" alt="Git">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">The Colored Pencil Drawing Course</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$34.99</p>
+                                <h6 >$18</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/838056_611a_3-272x161.jpg" class="card-img-top" alt="apple-products-2">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">Paint Realistic Watercolor and Botanicals - STUDIO BASICS</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$69.99</p>
+                                <h6 >$35</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/1414956_d944_15-272x161.jpg" class="card-img-top" alt="android">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">Mastering Brushstrokes - Part 1</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$19.99</p>
+                                <h6 >$10</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 17rem;">
+                    <img src="../assets/img/1109398_4c13-272x161.jpg" class="card-img-top" alt="xamarin">
+                    <div class="card-body">
+                        <p class="card-title">Arts & Crafts</p>
+                        <p class="card-text">Paint Realistic Watercolor and Botanicals - MAGNOLIAS</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/starfull.svg">
+                                <img src="../assets/img/staremptyl.svg">
+                            </div>
+                            <div>
+                                <p class="m-0 old-price">$69.99</p>
+                                <h6 >$35</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-center mb-5">
+                        <button class="show-all">SHOW ALL</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -282,5 +546,10 @@ export default {
     .lista-corsi:hover {
         @include  hover-blue;
         color:#fff
+    }
+
+    .show-all{
+        @include btn-blue;
+        
     }
 </style>
