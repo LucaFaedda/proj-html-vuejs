@@ -156,8 +156,8 @@ export default {
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- sezione read-more -->
         <div class="container-fluid bk-image-desk">
             <div class="container ">
                     <div class="row">
@@ -172,6 +172,26 @@ export default {
                     </div>
                 </div>
         </div>
+        <div class="container-fluid padding-container mt-5">
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center ">
+                    <h2 class="font-40px">Recent course</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center list-unstyled corsi-recenti ">
+                        <li><a href="#" class="bk-blue-btn text-light">All Category</a></li>
+                        <li><a href="#" class="lista-corsi ">Business</a></li>
+                        <li><a href="#" class="lista-corsi">Design</a></li>
+                        <li><a href="#" class="lista-corsi">Development</a></li>
+                        <li><a href="#" class="lista-corsi">Lifestyle</a></li>
+                        <li><a href="#" class="lista-corsi">Marketing</a></li>
+                        <li><a href="#" class="lista-corsi">Office Productivity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -179,6 +199,7 @@ export default {
     @use '../assets/style/partials/mixin' as *;
     @use '../assets/style/partials/variables' as *;
 
+    /*sezione jumbo*/
     .bk-red{
         background: #ff4450;
 
@@ -193,6 +214,7 @@ export default {
                 }
          }
     }
+    /*sezione card*/
     .card{
         border-radius: 0%;
         margin: 0px 5px;
@@ -212,9 +234,10 @@ export default {
         }
     }
 
+    /* sezione desk*/
     .bk-image-desk{
         background-image: url('../assets/img/bg.png');
-        padding: 200px;
+        padding: 160px;
 
         .container{
             h2{
@@ -222,11 +245,42 @@ export default {
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold
             }
+            .read-more{
+                @include btn-red;
+                border: none
+            }
         }
     }
 
-    .read-more{
-        @include btn-red;
-        border: none
+    /* sezione corsi recenti */
+
+    .font-40px{
+        font-size: 40px;
+    }
+
+    .corsi-recenti{
+        li{
+            margin: 0 10px;
+        }
+        ul:first-child{
+            color: #fff;
+        }
+
+    }
+
+    .bk-blue-btn{
+        padding: 10px 20px;
+        background-color: $colorLightblu;
+        border-radius:20px;
+    }
+    
+    a{
+        color: $colorLightblu;
+        padding: 10px 20px;
+    }
+
+    .lista-corsi:hover {
+        @include  hover-blue;
+        color:#fff
     }
 </style>

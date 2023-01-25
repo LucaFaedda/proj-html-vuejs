@@ -6,3 +6,10 @@
     color: #fff;
     font-weight: bold;
 }
+
+@mixin hover-blue {
+
+
+    background-color: #457993;
+    border-radius: 20px;
+}
