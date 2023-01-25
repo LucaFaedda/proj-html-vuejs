@@ -457,6 +457,7 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- sezione subscribe -->
         <div class="container-fluid bk-red-red">
             <div class="container">
                 <div class="row py-5">
@@ -475,6 +476,156 @@ export default {
                 </div>
             </div>
 
+        </div>
+        <!-- sezione corsi popolari -->
+        <div class="container-fluid corsi-popolari  py-5">
+            <div class="container-fluid padding-container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div  class="text-center">
+                            <h2>Popolar Courses</h2>
+                            <p>Discover our most popular courses for self learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 d-flex justify-content-between card-popular ">
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/895786_7b4b_2-272x161.jpg" class="card-img-top" alt="apple-products">
+                        <div class="card-body">
+                            <p class="card-title">Development</p>
+                            <p class="card-text">The complete iOS & Swift 3 Developer Course</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <h6 >Free</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/1561458_7f3b-272x161.jpg" class="card-img-top" alt="HTML-CSS">
+                        <div class="card-body">
+                            <p class="card-title">Design</p>
+                            <p class="card-text">CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass)</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <p class="m-0 old-price">$199.99</p>
+                                    <h6 >$100</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/246154_d8b0_3-544x322.jpg" class="card-img-top" alt="Git">
+                        <div class="card-body">
+                            <p class="card-title">Development</p>
+                            <p class="card-text">Web Design for Beginners: Real World Coding in HTML & CSS</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <p class="m-0 old-price">$129.99</p>
+                                    <h6 >$65</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/1208228_d61c_4-272x161.jpg" class="card-img-top" alt="android">
+                        <div class="card-body">
+                            <p class="card-title">Design</p>
+                            <p class="card-text">Digitally Painting Light and Color: Amateur to Master</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <p class="m-0 old-price">$139.99</p>
+                                    <h6 >$70</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/186792_41e4_4-272x161.jpg" class="card-img-top" alt="apple-products-2">
+                        <div class="card-body">
+                            <p class="card-title">Arts & Crafts</p>
+                            <p class="card-text">Become an Arabic Calligraphy Artist from Scratch</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <h6 >$199.99</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="card" style="width: 17rem;">
+                        <img src="../assets/img/1776542_30b1-272x161.jpg" class="card-img-top" alt="xamarin">
+                        <div class="card-body">
+                            <p class="card-title">Google</p>
+                            <p class="card-text">Google Searching Ninja!</p>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/starfull.svg">
+                                    <img src="../assets/img/staremptyl.svg">
+                                </div>
+                                <div>
+                                    <p class="m-0 old-price">$189.99</p>
+                                    <h6 >$95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div>
+                            <button class="btn-freccia"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="btn-freccia"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 </template>
@@ -576,6 +727,7 @@ export default {
         }
     }
 
+    /*sezione sub-scribe*/
     .bk-red-red{
         background-color: $colorRed;
         .container{
@@ -602,5 +754,24 @@ export default {
         
     }
 
+    /*sezione corsi popolari*/
+    .corsi-popolari{
+        background-color: #f0f4fa;
+
+        .btn-freccia{
+            padding: 15px 20px;
+            border:0.5px solid $colorGrey;
+            background-color: #ffff;
+
+            &:hover{
+                background-color: $colorLightblu;
+            }
+
+            i{
+                color: $colorGrey;
+            }
+        }
+
+    }
 
 </style>
