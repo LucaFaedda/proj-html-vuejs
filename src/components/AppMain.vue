@@ -32,7 +32,7 @@ export default {
                     </div>
                     </div>
                     <div class="card" style="width: 17rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../assets/img/246154_d8b0_3-544x322.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -40,7 +40,7 @@ export default {
                     </div>
                     </div>
                     <div class="card" style="width: 17rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../assets/img/752950_b773-272x161.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -48,7 +48,7 @@ export default {
                     </div>
                     </div>
                     <div class="card" style="width: 17rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../assets/img/1253188_58f7_2-272x161.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -56,7 +56,7 @@ export default {
                     </div>
                     </div>
                     <div class="card" style="width: 17rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../assets/img/895786_7b4b_2-272x161.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -64,7 +64,7 @@ export default {
                     </div>
                     </div>
                     <div class="card" style="width: 17rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../assets/img/895786_7b4b_2-272x161.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
