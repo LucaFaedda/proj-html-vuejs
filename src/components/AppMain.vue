@@ -627,6 +627,39 @@ export default {
             </div>
             </div>
         </div>
+        <!-- sezione become and access -->
+        <div class="container-fluid sezione-become-access">
+            <div class="container-fluid padding-container">
+                <div class="row d-flex justify-content-evenly">
+                    <div class="col-5 border d-flex justify-content-center p-5 my-5">
+                        <div class="d-flex  ">
+                            <img src="../assets/img/image_box_1-221x231.png">
+                            <div class="ms-5">
+                                <h2>Become an Instructor</h2>
+                                <p>Teach what you love. Masterstudy gives you the tools to create a course.</p>
+                                <button class="btn-personalizzato">START TEACHING</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-5 border d-flex justify-content-center p-5 my-5">
+                        <div class="d-flex  ">
+                            <img src="../assets/img/image_box_2-234x231.png">
+                            <div class="ms-5">
+                                <h2>Access For Business</h2>
+                                <p>Get unlimited access to 2,500 of top courses for your team.</p>
+                                <button class="btn-personalizzato">DOING BUSINESS</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -772,6 +805,15 @@ export default {
             }
         }
 
+    }
+
+    /*sezione become and access*/
+
+    .sezione-become-access{
+
+        .btn-personalizzato{
+            @include btn-red;
+        }
     }
 
 </style>
