@@ -1,6 +1,29 @@
 <script>
+
+import arrayCardPopolari from '../assets/data/arrayCardPopolari'
 export default {
-    
+    datat(){
+        return{
+            bkImage1:true,
+            bkImage2:false,
+            listaCardPopolari: arrayCardPopolari
+        }
+    },
+    mounted() {
+        setTimeout(()=> this.cambiaBk(), 3000);
+    },
+    methods:{
+        cambiaBk(){
+            if(this.bkImage1 ){
+                this.bkImage1 == false
+                this.bkImage2 == true
+            }
+            else{
+                this.bkImage1 == true
+                this.bkImage1 == false
+            }
+        }
+    }
 }
 </script>
 <template lang="">
@@ -660,6 +683,9 @@ export default {
                 </div>
             </div>
         </div>
+        <div class="container-fluid " :class="{bkImage1, bkImage2}">
+
+        </div>
     </div>
 </template>
 
@@ -814,6 +840,14 @@ export default {
         .btn-personalizzato{
             @include btn-red;
         }
+    }
+
+    .bkImage1{
+        background-image: url('../assets/img/micah-296507-unsplash-1-copy-1-1920x700-1-1917x699.jpg');
+    }
+
+    .bkImage2{
+        background-image: url('../assets/img/micah-296507-unsplash-1-copy-1-1920x700-1-1917x699.jpg');
     }
 
 </style>
