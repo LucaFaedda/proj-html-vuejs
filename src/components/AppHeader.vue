@@ -118,7 +118,7 @@ header{
     font-family: 'Roboto', sans-serif; 
     width: 100%;
     .padding-container{
-        padding: 1rem 7rem 0rem;
+        
         .navbar{
         color: $colorGrey;
         font-size: 14px;
